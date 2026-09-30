@@ -7,6 +7,7 @@ from supabase import create_client, Client
 
 app = FastAPI(title="API de Riesgo de Incendios Valparaíso")
 
+# conexión con Supabase
 SUPABASE_URL = "https://xxguxqrokbjmquftlwcl.supabase.co"
 SUPABASE_KEY = "sb_publishable_KnUZ15HFfy3yCIeSeTIkFw_h063B1SX"
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
