@@ -53,3 +53,7 @@ def clasificar_riesgo(datos: DatosZona):
         "puntos_calculados": puntos,
         "clasificacion_riesgo": nivel_riesgo
     }
+
+@app.get("/")
+def inicio():
+    return {"mensaje": "API de Monitoreo de Riesgo de Incendios Activa"}
